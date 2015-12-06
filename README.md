@@ -18,8 +18,11 @@
 * open terminal and run socat in osx
 
     $socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"
-    
+
 * run docker container with ovirtualbox ip in osx
     
     $docker run -it -e DISPLAY=192.168.99.1:0 --name xwin yekki/xoel:7.2 /bin/bash
 
+## TODO
+
+* add Chinese fonts support
