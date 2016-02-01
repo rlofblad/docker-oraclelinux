@@ -3,7 +3,7 @@
 * download [Oracle Linux 7.2] (https://github.com/oracle/docker-images/blob/OracleLinux-images/OracleLinux/7.2/oraclelinux-7.2.tar.xz)
 * download jdk
 
-    $curl -v -j -k -L -H "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u65-b17/jdk-8u65-linux-x64.rpm > jdk-8u65-linux-x64.rpm
+    curl -v -j -k -L -H "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u72-b15/jdk-8u72-linux-x64.rpm > jdk-8u72-linux-x64.rpm
 
 ## How to build docker docker-images
 

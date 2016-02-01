@@ -1,18 +1,9 @@
-FROM yekki/oraclelinux:7.2
-
-# Maintainer
-# ----------
-MAINTAINER Gary Niu <gary.niu@oracle.com>
-
-# Environment variables required for this build (do NOT change)
+FROM scratch
+MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
+ADD oraclelinux-7.2.tar.xz /
 
 USER root
 RUN echo "root:welcome1" | chpasswd
-RUN yum -y groupinstall "X Window System"
 
-# for test purpose
-RUN yum -y install xeyes
-
-RUN yum update -y; yum clean all
-
+# overwrite this with 'CMD []' in a dependent Dockerfile
 CMD ["/bin/bash"]
